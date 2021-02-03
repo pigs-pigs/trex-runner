@@ -9,5 +9,6 @@ see the [source](https://cs.chromium.org/chromium/src/components/neterror/resour
 
 ![chrome offline game cast](assets/screenshot.gif)
 
--[bot](
+- [bot](https://github.com/chirag64/t-rex-runner-bot)
+
 ![](assets/t-rex-runner-bot.gif)
