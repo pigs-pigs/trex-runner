@@ -1,7 +1,7 @@
 // Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-// extract from chromium source code by @liuwayong
+// extract from chromium source code by liuwayong
 (function () {
     'use strict';
     /**
@@ -1746,13 +1746,12 @@
 
         /**
          * Initialise a jump.
-         * @param {number} speed
          */
-        startJump: function (speed) {
+        startJump: function () {
             if (!this.jumping) {
                 this.update(0, Trex.status.JUMPING);
                 // Tweak the jump velocity based on the speed.
-                this.jumpVelocity = this.config.INIITAL_JUMP_VELOCITY - (speed / 10);
+                this.jumpVelocity = this.config.INIITAL_JUMP_VELOCITY;
                 this.jumping = true;
                 this.reachedMinHeight = false;
                 this.speedDrop = false;
@@ -1772,9 +1771,8 @@
         /**
          * Update frame for a jump.
          * @param {number} deltaTime
-         * @param {number} speed
          */
-        updateJump: function (deltaTime, speed) {
+        updateJump: function (deltaTime) {
             var msPerFrame = Trex.animFrames[this.status].msPerFrame;
             var framesElapsed = deltaTime / msPerFrame;
 
